@@ -9,7 +9,7 @@ int main(){
 	int key;
 	std::cin>>a>>key;
 	sEncoded = encode(a,key);
-	std::cout<<sEncoded<<std::endl;
+	std::cout<<"Encoded text is: "<<sEncoded<<std::endl;
 	
-	std::cout<<decode(sEncoded,5)<<std::endl;
+	std::cout<<"Decoded text is: "<<decode(sEncoded,key)<<std::endl;
 }
