@@ -1,15 +1,15 @@
 #include <iostream>
 #include "encoder.h"
 #include "decoder.h"
-
+#include "unit_tester.h"
 
 int main(){
 
-	std::string a,sEncoded;
+	std::string a,strEncoded;
 	int key;
 	std::cin>>a>>key;
-	sEncoded = encode(a,key);
-	std::cout<<"Encoded text is: "<<sEncoded<<std::endl;
 	
-	std::cout<<"Decoded text is: "<<decode(sEncoded,key)<<std::endl;
+	test_cesar(a,key);
+	
+	return 0;	
 }
